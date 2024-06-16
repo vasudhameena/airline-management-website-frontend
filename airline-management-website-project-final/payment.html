@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="navigation">
+        <div id="brandname">
+        <p>AeroNexus Airlines</p>
+        </div>
+        <div id="steps"> 
+        <div id="step1"><i class="material-icons">person</i><p>Passenger Details</p></div>
+        <div id="step2"><i class="material-icons">shopping_cart</i><p>Add-ons</p></div>
+        <div id="step3"><i class="material-icons">airline_seat_recline_normal</i><p> Seat</p></div>
+        <div id="step4"><i class="material-icons">credit_card</i><p>Payment</p></div>
+        </div>
+        <div id="guidelines"><a href="guide.html">Travel Guidelines</a></div>
+</div>
+<div class="advertisement">
+        <img src="sky1.jpg">
+        <h2> AeroNexus Membership</h2>
+        <a href="membership.html">Not sure of your flight date?Or want to get discounts on seats and extra baggage.. Join SkyConnect Elite to learn more</a>
+</div>
+      <div class="contain">
+        <div class="promocode">
+            <div class="heading">
+                <h2>Enter Promo Code</h2>
+            <p>(if applicable)</p>
+            </div>
+           <div class="getcode">
+            <input type="text" placeholder="Code(Try FLYAIRNEXUS15)">
+            <button>Apply</button>
+           </div>
+           </div> 
+           <div class="bookingsummary">
+            <h2> Booking Summary</h2>
+            <hr>
+            <h3>Departing</h3>
+            <p class="flight_no">Flight no: 6E 3456</p>
+            <div class="info">
+                <div id="depart">
+                    <h3>BLR</h3>
+                    <p >13 JUN 24</p>
+                    <p class="departtime">20:25</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+                  <div id="land">
+                    <h3>GAU</h3>
+                    <p>13 JUN 24</p>
+                    <p class="arrivetime">22:50</p>
+                  </div>
+            </div>
+              <hr>
+              <div class="moreinfo">
+                <p class="stopinfo">Non-Stop</p>
+                <p class="checkin">Check-in:15kg</p>
+                <p>Hand:Upto 7kg</p>
+              </div>
+              <hr>
+               <div class="passengerlist"> <h3>Passenger(S)</h3>
+                </div>
+                <hr>
+                <div class="price">
+                     <div>
+                        <h3>Price Summary</h3>
+                        <a href="#">T&C's</a>
+                     </div>
+                    <div><p>Airfare Charges:</p>
+                    <cost>7434INR</cost>
+                    </div>
+                    <div><p>Fees & Taxes:</p>
+                    <cost>753INR</cost>
+                    </div>
+                    <div><div class="addonandseatinfo" style="margin:2vh 0 0 1vh;">Addons & Seat:</div>
+                    <cost>987INR</cost>
+                    </div>
+                    <div><p>Convenience Fee:</p>
+                        <cost>987INR</cost>
+                        </div>
+                    <hr>
+                    <div><p> Total Amount:</p>
+                    <cost>12345INR</cost>
+                    </div>
+                    <hr>
+                </div>
+        
+           </div>
+           <div class="paymentmethod">
+                 <h2> Choose Payment Method</h2>
+                  
+                    <div class="paymentoptions">
+                        <div> Credit/Debit Card</div>
+                       <div> UPI</div>
+                      <div> Net Banking</div>
+                      </div>
+                      <div class="paydetails">
+                        <div class="card">
+                         <div><p>Name On Card</p>
+                             <input type="text" placeholder="CardHolder Name" id="cardname">
+                         </div>
+                         <div><p>Card Number</p>
+                             <input type="number" placeholder="Card Number" id="cardnumber">
+                         </div>
+                         <div><p>Expiration Month</p>
+                            <input type="number" placeholder="MM//YY" id="date" oninput="if(this.value.length > 4) this.value = this.value.slice(0, 4); " >
+                            </div>
+                         <div><p>Card  CVV</p>
+                                <input type="number" placeholder="CVV" id="CVV" min="100" max="999" oninput="if(this.value.length > 3) this.value = this.value.slice(0, 3); ">
+                            </div>
+                        </div>
+                        <div class="Upi">
+                          <img src="images/UPI.png">
+                         <p>Pay instantly from your bank account using Unified Payment Interface(UPI). To do so, you must have a registered Virtual Payment address(VPA)</p>
+                       <div class="upiinfo">
+                        <div id="upiid">
+                            <h3>Enter Virtual Payment address(VPA)</h3>
+                            <input type="text" placeholder="Enter your UPI ID" id="idupi">
+                            <button> Verify</button>
+                        </div>
+                        <p>OR</p>
+                        <div id="qr">
+                            <h3>Scan and Pay</h3>
+                            <img src="images/qr.png">
+                        </div>
+                       </div>
+                     </div>
+                     <div class="netbank">
+                     <h3>Welcome to Net Banking</h3>
+                         <div id="netbankingoption">
+                             <div><input type="radio" name="netbankingoption" value="Axis" id="nb">Axis Bank</div>
+                            <div> <input type="radio" name="netbankingoption" value="HDFC" id="nb">HDFC Bank</div>
+                            <div> <input type="radio" name="netbankingoption" value="ICICI" id="nb">ICICI Bank</div>
+                            <div> <input type="radio" name="netbankingoption" value="SBI" id="nb">SBI</div>
+             
+                         </div>
+                          <div class="urgentmsg" style="color:#e7bcbc">Net banking is currently unavailable. We apologize for the inconvenience.</div>
+                     </div>
+                  </div>
+      
+             
+           </div>
+          </div>
+          <div class="addonandseat">
+            <i class="fa-solid fa-xmark" style="padding:1vh 0 0 2vh; grid-column: 1/3;"></i>
+              <div class="seatfinal">
+                <h3>Seat:</h3>
+                <p>30B</p>
+              </div>
+              <div class="mealsfinal">
+                <h3>SkyNexus Gourmet:</h3>
+                <p>NONE</p>
+              </div>
+              <div class="assistancefinal">
+                <h3>Special Assistance:</h3>
+                <p>NONE</p>
+              </div>
+              <div class="lostfinal">
+                <h3>Lost Baggage Protection:</h3>
+                <p>No</p>
+              </div>
+              <div class="priorityfinal">
+                <h3>NexusPriority Access:</h3>
+                <p>No</p>
+              </div>
+              <div class="zcfinal">
+                <h3>Zero Cancellation:</h3>
+                <p>No</p>
+              </div>
+              <div class="fdcfinal">
+                <h3>Free Date Change:</h3>
+                <p>No</p>
+              </div>
+              <div class="sportsfinal">
+                <h3>No of Sport items:</h3>
+                <p>2</p>
+              </div>
+              
+        </div>
+        <div class="last-part">
+          <br><br>
+          <hr class="divider">
+          <div class="list">
+              <div class="listone">
+                  <p>ABOUT US</p>
+                  <ul>
+                      <li><a href="#">About AeroNexus Airlines</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Our Crew and Staff</a></li>
+                      <li><a href="#">Partner Airlines</a></li>
+                  </ul>
+              </div>
+              <div class="listtwo">
+                  <p>AERONEXUS EXPERIENCE</p>
+                  <ul>
+                      <li><a href="#">At the Airport</a></li>
+                      <li><a href="#">In the Air</a></li>
+                      <li><a href="#">Our Fleet</a></li>
+                  </ul>
+              </div>
+              <div class="listthree">
+                  <p>SUPPORT</p>
+                  <ul>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Terms & Conditions</a></li>
+                  </ul>
+              </div>
+              <div class="listfour">
+                  <p>INFORMATION</p>
+                  <ul>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Cookie Policy</a></li>
+                      <li><a href="#">Conditions of Carriage</a></li>
+                      <li><a href="#">Feedback Process</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="copyright">
+              <p>
+                  Copyright © 2024 AeroNexus Airlines.
+                  <br>
+                  All rights reserved. Use of this website indicates your compliance with our Privacy Policy, Conditions of Carriage, Terms and Conditions.
+              </p>
+          </div>
+      </div>
+      
+
+           <script src="payment.js"></script>
+        </body>
+     
+</html>

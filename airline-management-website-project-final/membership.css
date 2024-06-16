@@ -1,0 +1,325 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: auto;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.upper-bar1 {
+    width: 100vw;
+    height: 4vh;
+    overflow: hidden;
+    background-color: #7077A1;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 5px 0;
+    font-weight: 200;
+}
+
+.upper-bar2 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    /* padding: 0 10px; */
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.navbar{
+    width:100%;
+    height:13vh;
+    background-color: #161a30;
+    color:white;
+    
+}
+.navbar h2{
+    padding:5vh;
+}
+.imagecontainer{
+    height:70vh;
+    width:100%;
+    background-color:black;
+    color: white;
+    background-image: url(popular2.jpg);
+    background-size: cover;
+    background-position: 50%;
+position:relative;
+font-weight: bolder;
+text-shadow:5px 5px 10px #161a30;
+}
+.membershipheading{
+    position: absolute;
+    top:30vh;
+    left:2vh;
+}
+.membershipdescr{
+position: absolute;
+top:42vh;
+left:3vh;
+
+
+}
+.logins{
+    display:flex;
+    position:absolute;
+    top:54vh;
+    left:2vh;
+}
+.logins button{
+    margin-right:2vh;
+    height:7vh;
+    width:7vw;
+    font-size: 16px;
+}
+.signup{
+   
+    background: #161a30;
+    color:white;
+    border: none;
+    border-radius: 10px;
+}
+.signin{
+    color:#161a30;
+    border:2px solid #161a30;
+    border: none;
+    border-radius: 10px;
+}
+.service{
+    display: flex;
+    margin:10vh;
+    color:white;
+    text-shadow:5px 5px 10px #161a30;
+    font-weight: bold;
+    font-size:20px;
+    height:35vh;
+    box-shadow:20px 20px #7077A1;
+   
+}
+.exploreheading{
+    width:80vw;
+    background-color: #161a30;
+    font-size:40px;
+    padding:3vh;
+    padding-top: 6vh;
+    color: whitesmoke;
+}
+.explorecategories{
+    width: calc(100%-30vw);
+    overflow: hidden;
+    position: relative;
+}
+.categoriescontainer {
+    display: flex;
+    width: calc(200%); 
+    animation: scroll 20s linear infinite; 
+}
+.categoriescontainer div ,
+.categoriescontainer img{
+    width: 20%; 
+    flex-shrink: 0;
+    height:40vh;
+}
+.categoriescontainer img{
+    width:100%;
+}
+.categoriescontainer div{
+    position: relative;
+}
+.categoriescontainer p{
+position: absolute;
+top:20%;
+left:10%;
+font-size: 24px;
+color:white;
+/* text-shadow: 6px 6px 5px #e7abab; */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-150%); 
+    }
+}
+
+.EarnPoints,.SpendPoints{
+background-image: url(sunset.jpg) ;
+background-size: cover;
+background-position: 100% 35%;
+height:85vh;
+width:100%;
+position: relative;
+
+
+}.SpendPoints{
+    margin-top:7vh;
+}
+.SpendPoints{
+    background-image: url(sky1.jpg);
+    background-size: cover;
+}
+
+.EarnPoints p,.SpendPoints p{
+    font-size:18px;
+    padding:1vh;
+    width:40vw;
+    color:white;
+}
+.partnercontainer,.spendcontainer{
+    display:grid;
+    width:40vw;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(3,20vh);
+    grid-gap:2vh;
+    position:absolute;
+    top:6vh;
+    right:20vh;
+    
+}
+
+.spendcontainer{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(2,35vh);
+    top:3vh;
+    left:20vh;
+}
+.partnercontainer div,.spendcontainer div{
+background:black;
+color:white;
+text-shadow:5px 5px 10px #161a30 ;
+ position: relative;
+ overflow: hidden;
+ transition: transform 0.3s ease-in-out;
+}
+.partnercontainer div:hover, .spendcontainer div:hover{
+transform:scale(1.02);
+}
+#partnera{
+    grid-column:1/3;
+   grid-row:1/3;
+}
+
+#partnerc{
+    grid-column: 1/3;
+    grid-row:3/4;
+}
+#partnerd{
+    grid-column: 3/4;
+    grid-row:2/4;
+}
+#spenda{
+    grid-column: 1/3;
+    grid-row:1/2;
+}
+#spendb{
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+#spendc{
+    grid-column: 2/3;
+    grid-row:2/3;
+}
+.partnercontainer img,.spendcontainer img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+   
+}
+.partnercontainer p,.spendcontainer p{
+    position:absolute;
+    top:20%;
+}
+.EarnPoints button,.SpendPoints button{
+    height:8vh;
+    width:100%;
+    background-color: #161a30;
+    color:white;
+    border: none;
+    position: absolute;
+    font-size: 20px;
+    bottom:0;
+    
+}
+.Join{
+    height:20vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 30px;
+   color: antiquewhite;
+   /* text-shadow:10px 10px 10px white; */
+   font-weight: bolder;
+    background-image: url(longbeach3.jpg);
+    background-size: cover;
+    margin:2vh 0.5vw 0 0.5vw;
+}
+.space1 {
+    width: 100vw;
+    height: 2vh;
+}
+.last-part {
+    width: 100vw;
+    height: auto;
+    background-color: #161A30;
+    display:flex;
+    flex-direction: column;
+  
+}
+.divider {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+ul{
+    list-style: none;
+}
+.list p{
+    color: whitesmoke;
+}
+.list{
+    display:flex;
+    justify-content: space-between;
+   
+    padding-top:2vh;
+}
+.list li{
+    padding-top:10px;
+}
+.last-part a{
+    color:#7077A1;
+    text-decoration: none;
+    cursor:default;
+  
+}
+.copyright{
+    margin-top: 2vh;
+    color:whitesmoke;
+    background-color:#424769;
+    text-align: center;
+    height: 7vh;
+    padding-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+

@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height: auto;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.head1{
+    color: whitesmoke;
+    font-size: 42px;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+.upper-bar1 {
+    width: 100vw;
+    height: 17px;
+    overflow: hidden;
+    background-color: #7077A1;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 5px 0;
+    font-weight: 200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.upper-bar2 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    /* padding: 0 10px; */
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    max-width: 100vw;
+    background-color: #161A30;
+    color: #B6BBC4;
+    /* padding: 0 20px; */
+    overflow-x: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.company-name{
+    margin-top: 1rem;
+    font-size: x-large;
+    color: white;
+    background-color: #161A30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: 4rem;
+}
+
+.space1{
+    width: 100vw;
+    height: 2vh;
+}
+.main-img{
+    width: 100vw;
+    height: 55vh;
+    background-color: whitesmoke;
+    background-image: url(popular1.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 60px ;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+}
+.img-text{
+    top: 20vh;
+    left: 25vw;
+    position: absolute;
+}
+#block1{
+    width: 40vw;
+    height: 10vh;
+    background-color: #7077A1;
+     position:absolute;
+     top: 7vh;
+      left:5vw; 
+      z-index: 4;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         
+}
+.heading{
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+}
+.plane-img{
+    position: absolute;
+    left: 45vw;
+    bottom: 1vh;
+}
+#block2{
+    width: 40vw;
+    height: 10vh;
+    background-color: #424769;
+    position:absolute;
+     top:10vh;
+      left:7vw;
+      z-index: 3;
+      
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+    max-height: calc((102vh - 75px) * 0.8); /* Adjust the max height based on the viewport */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.grid-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-image {
+    width: 100%;
+    height: 15vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.box-content {
+    flex-grow: 1;
+}
+
+.book-now {
+    background-color: #161A30;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-now:hover {
+    background-color: #7077A1;
+    color: white;
+}
+
+.view-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #161A30;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-more:hover {
+    background-color: #7077A1;
+    color: white;
+}
+.last-part {
+    width: 100vw;
+    height: auto;
+    background-color: #161A30;
+    display:flex;
+    flex-direction: column;
+  
+}
+.divider {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+ul{
+    list-style: none;
+}
+.list p{
+    color: whitesmoke;
+}
+.list{
+    display:flex;
+    justify-content: space-between;
+   
+    padding-top:2vh;
+}
+.list li{
+    padding-top:10px;
+}
+.last-part a{
+    color:#7077A1;
+    text-decoration: none;
+    cursor:default;
+  
+}
+.copyright{
+    margin-top: 2vh;
+    color:whitesmoke;
+    background-color:#424769;
+    text-align: center;
+    height: 7vh;
+    padding-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+
+

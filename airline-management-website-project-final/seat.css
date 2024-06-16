@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navigation{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161A30;
+    height:10vh;
+    width:100%;
+    box-shadow: 10px black ;
+    
+}
+#brandname,#guidelines a{
+    color:white;
+    text-decoration: none;
+    padding: 20px;
+}
+#brandname{
+    font-size: x-large;
+}
+
+#steps{
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#steps div{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    opacity:0.3;
+}
+
+ #steps #step3{
+    opacity:1;
+}
+
+.advertisement
+{
+    width:100%;
+    height:15vh;
+    text-align:center;
+    position:relative;
+    margin:2px;
+}
+
+.advertisement img{
+    width:100%;
+    height:15vh;
+    object-fit: cover;
+}
+.advertisement a,
+.advertisement h2{
+    position:absolute;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(19, 16, 16, 0.7);
+
+}
+.advertisement h2{
+    top:20px;
+    left:40%;
+}
+.advertisement a{
+    top:50px;
+    font-size:20px;
+    padding-top:10px ;
+    left:15%;
+    text-decoration: none;
+}
+.details{
+    display:grid;
+    width:100%;
+    height:140vh;
+    grid-template-columns: 3fr 1fr; 
+    background-color: rgba(186, 211, 202,0.3);  
+   
+   
+}
+
+.summary{
+    margin:12vh 10px 10px 10px;
+    color:#161A30;
+}
+
+.flight_summary,
+.fare_summary{
+background-color: white;
+height:55vh;
+margin:10px;
+border:2px solid #161A30;
+
+color:#161A30;
+}
+#flight_details_heading{ 
+    font-size:25px;
+    font-weight:700;
+    padding:10px;
+    display: block;
+ }
+ #flight_basicinfo{
+     display:flex;
+     justify-content: space-between;
+    
+     align-items: center;
+     padding:10px;
+     background-color: rgba(186, 211, 202,0.3);
+ }
+ #flight_number{
+     display:flex;
+ }
+ 
+ #flight_journey{
+     font-size:17px;
+     font-weight: bold;
+     padding:10px;
+     display:block;
+ }
+ #flight_info{
+     display:grid;
+     grid-template-columns: repeat(2,1fr);
+     padding:10px;
+ }
+ #flight_info>*{
+     padding:5px;
+ }
+ #baggage_details{
+     display:grid;
+     grid-template-columns: repeat(2,1fr);
+     margin:20px 0 0 10px;
+ }
+ .flight_summary:hover #flight_details_heading,
+ .fare_summary:hover #fare_heading{
+ text-decoration:underline;
+ }
+ 
+ .fare_summary div{
+   display:flex;
+   justify-content: space-between;
+   font-size:20px;
+   padding:20px 10px 20px 10px;
+ }
+ #fare_heading{
+     font-size:25px;
+     font-weight:700;
+     padding:10px;
+     display: block;
+ }
+ .fare_summary p{
+     display:flex;
+     align-items: center;
+ }
+ #totalfare{
+     background-color: rgba(186, 211, 202,0.3);
+ }
+ 
+
+ .seat_select{
+    position: relative;
+}
+.seat_select>*{
+    color:#161A30;
+}
+.container1{
+    height:10vh;
+    width:80%;
+    margin:2vh 0 0 0.5vh;
+    background-color: #7077A1;
+    box-shadow: 2vh 2vh  #424769;
+}
+
+
+.seat_select h1{
+    padding-left:4vh;
+    padding-top: 1vh;
+    z-index: 1000;
+    position: absolute;
+    color:whitesmoke;
+    top:1.4vh;
+}
+.seat_select h2{
+    margin-left:4vh;
+    padding-bottom: 1vh;
+    margin-top:2vh;
+    z-index: 1000;
+    color:whitesmoke;
+    position: absolute;
+    top:5.4vh;
+}
+
+.seatmap{
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    align-items:start;
+    justify-items: start;
+    background: white;
+    margin-top:4vh;
+    padding-bottom: 2vh;
+}
+.seatmap h2{
+    
+    margin-top:5vh;
+    
+    grid-column:1/6;
+    margin-bottom:3vh;
+    position:static;
+    color:#161A30;
+    
+   
+}
+.seattags div{
+    height:20px;
+    width:20px;
+   margin-right:10px;
+  margin-left:4vh;
+}
+.seattags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+}
+#freeseat{
+    background: lightskyblue;
+}
+#xtralegroomseat{
+    background: rgb(99, 99, 194);
+}
+#Preferredseat{
+    background: blue;
+}
+#Unavailable{
+    background: rgb(99, 103, 110);
+}
+#selectedseat{
+    background: #151d4b;
+}
+.seatinfo{
+    height:50vh;
+    position: absolute;
+    background: #e1bcbc;
+    top:50vh;
+    left:3vw;
+    box-shadow:15px 15px #e7abab;
+    width:20vw;
+    color:#161a30;
+    font-size:20px;
+    text-shadow: 0.5px 0.5px rgb(255, 255, 255);
+    font-weight: bold;
+   
+
+}
+.choice
+{   position:absolute;
+    font-size:30px;
+    font-weight:bolder;
+    bottom:3vh;
+    right:2vw;
+  
+}
+.seatinfo div{
+display:flex;
+margin:2vh;
+margin-top:5vh;
+justify-content: space-between;
+align-items: end;
+}
+
+.plane{
+    height:80vh;
+    overflow: hidden;
+    position:absolute;
+    background-color: white;
+    padding:3vh 0 3vh 0;
+    box-shadow: 2px #151d4b;
+    top:50vh;
+    left:30vw;
+    display: grid;
+    grid-template-rows: repeat(31,30px);
+grid-gap:2vh;
+overflow-y: scroll;
+scrollbar-width: none;
+-ms-overflow-style: none;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.plane::-webkit-scrollbar {
+    width: 0;}
+    .seat{
+        height:30px;
+        width:30px;
+        background-color: blue;
+        color:white;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+.row,.seatcolno{
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-gap:2vh; 
+}
+.col{
+    color:#161A30;
+}
+.seatrowno{
+    position:relative;
+    top:7px;
+    color:#161A30;
+}
+
+.D,#D{
+    grid-column:7/8;
+}
+.extra_legroom .seat{
+    background-color: rgb(99, 99, 194);
+}
+
+.extra_legroom .seatrowno,
+.seatcolno .seat,
+.seatrowno{
+    background: white;
+}
+
+.free{
+    background-color: lightskyblue;
+}
+
+.unavailable{
+    background: rgb(99, 103, 110);
+}
+.row .selectedseat,
+.extra_legroom .selectedseat{
+    background: #151d4b;
+}
+
+.submit,.reset{
+  position:absolute;
+  left:5vw;
+   
+    border:none;
+    border-radius: 15px;
+    height:7vh;
+    width:10vw;
+}
+.submit{
+    top:120vh;  
+    color:white;
+    background-color: #161a30;  
+   
+}
+.reset{
+top:110vh;
+color: #161a30;
+background-color: white;
+border:2px solid #161a30
+}
+
+.space1 {
+    width: 100vw;
+    height: 2vh;
+}
+.last-part {
+    width: 100vw;
+    height: auto;
+    background-color: #161A30;
+    display:flex;
+    flex-direction: column;
+  
+}
+.divider {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+ul{
+    list-style: none;
+}
+.list p{
+    color: whitesmoke;
+}
+.list{
+    display:flex;
+    justify-content: space-between;
+   
+    padding-top:2vh;
+}
+.list li{
+    padding-top:10px;
+}
+.last-part a{
+    color:#7077A1;
+    text-decoration: none;
+    cursor:default;
+  
+}
+.copyright{
+    margin-top: 2vh;
+    color:whitesmoke;
+    background-color:#424769;
+    text-align: center;
+    height: 7vh;
+    padding-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat</title>
+    <link rel="stylesheet" href="seat.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+<div class="navigation">
+    <div id="brandname">
+    <p>AeroNexus Airlines</p>
+    </div>
+    <div id="steps"> 
+    <div id="step1"><i class="material-icons">person</i><p>Passenger Details</p></div>
+    <div id="step2"><i class="material-icons">shopping_cart</i><p>Add-ons</p></div>
+    <div id="step3"><i class="material-icons">airline_seat_recline_normal</i><p> Seat</p></div>
+    <div id="step4"><i class="material-icons">credit_card</i><p>Payment</p></div>
+    </div>
+    <div id="guidelines"><a href="guide.html">Travel Guidelines</a></div>
+</div>
+<!-- <div class="advertisement">
+    <img src="images/flight.jpg">
+    <h2> AeroNexus Membership</h2>
+    <a href="membership.html" >Not sure of your flight date?Or want to get discounts on seats and extra baggage.. Join SkyConnect Elite to learn more</a>
+</div> -->
+<div class="details">
+    <div class="seat_select">  
+        <div class="container1"></div>  
+               
+            <h1>Secure Your Spot in the Sky!</h1>
+            <h2 class="destination">BLR-GAU</h2>
+            
+            <div class="seatmap">
+                <h2> SEATMAP LEGEND</h2>
+                <div class="seattags">
+                   <div id="freeseat"></div>
+                   <p>Free Seat</p>
+                </div>
+                <div class="seattags">
+                    <div id="xtralegroomseat"></div>
+                    <p>Extra Legroom Seat</p>
+                 </div>
+                 <div class="seattags">
+                    <div id="Preferredseat"></div>
+                    <p>Preferred Seat</p>
+                 </div>
+                 <div class="seattags">
+                    <div id="Unavailable"></div>
+                    <p>Unavailable</p>
+                 </div>
+                 <div class="seattags">
+                    <div id="selectedseat"></div>
+                    <p>Selected Seat</p>
+                 </div>
+            </div>
+            <div class="seatinfo">
+                <div>
+                   <p> Preferred Seat:</p>
+                   <p>370INR</p>
+                </div>
+                <div>
+                    <p>Extra Legroom Seat:</p>
+                    <p>690INR</p>
+                 </div>
+                 <div>
+                    <p> Selected Seat</p>
+                    <p class="choice"></p>
+                 </div>
+            </div>
+
+            <div class="plane">
+                <div class="seatcolno">
+                    <div class="seatrowno seat" id="null"></div>
+                    <div class="seat col" id="A">A</div>
+                    <div class="seat col" id="B">B</div>
+                    <div class="seat col" id="C">C</div>
+                    <div class="seat col" id="D">D</div>
+                    <div class="seat col" id="E">E</div>
+                    <div class="seat col" id="F">F</div>
+                </div>
+                <div class="row extra_legroom">
+                    <div class="seatrowno seat"  id="1">1</div>
+                    <div class="seat A" id="1A"></div>
+                    <div class="seat B" id="1B"></div>
+                    <div class="seat C" id="1C"></div>
+                    <div class="seat D" id="1D"></div>
+                    <div class="seat E" id="1E"></div>
+                    <div class="seat F" id="1F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="2">2</div>
+                    <div class="seat A" id="2A"></div>
+                    <div class="seat B" id="2B"></div>
+                    <div class="seat C" id="2C"></div>
+                    <div class="seat D" id="2D"></div>
+                    <div class="seat E" id="2E"></div>
+                    <div class="seat F unavailable" id="2F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="3">3</div>
+                    <div class="seat A" id="3A"></div>
+                    <div class="seat B" id="3B"></div>
+                    <div class="seat C" id="3C"></div>
+                    <div class="seat D" id="3D"></div>
+                    <div class="seat E" id="3E"></div>
+                    <div class="seat F" id="3F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="4">4</div>
+                    <div class="seat A" id="4A"></div>
+                    <div class="seat B" id="4B"></div>
+                    <div class="seat C"id="4C"></div>
+                    <div class="seat D" id="4D"></div>
+                    <div class="seat E" id="4E"></div>
+                    <div class="seat F" id="4F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="5">5</div>
+                    <div class="seat A" id="5A"></div>
+                    <div class="seat B" id="5B"></div>
+                    <div class="seat C" id="5C"></div>
+                    <div class="seat D" id="5D"></div>
+                    <div class="seat E" id="5E"></div>
+                    <div class="seat F" id="5F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="6">6</div>
+                    <div class="seat A" id="6A"></div>
+                    <div class="seat B" id="6B"></div>
+                    <div class="seat C" id="6C"></div>
+                    <div class="seat D" id="6D"></div>
+                    <div class="seat E" id="6E"></div>
+                    <div class="seat F" id="6F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="7">7</div>
+                    <div class="seat A" id="7A"></div>
+                    <div class="seat B" id="7B"></div>
+                    <div class="seat C" id="7C"></div>
+                    <div class="seat D" id="7D"></div>
+                    <div class="seat E" id="7E"></div>
+                    <div class="seat F" id="7F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="8">8</div>
+                    <div class="seat A" id="8A"></div>
+                    <div class="seat B" id="8B"></div>
+                    <div class="seat C"id="8C"></div>
+                    <div class="seat D" id="8D"></div>
+                    <div class="seat E" id="8E"></div>
+                    <div class="seat F" id="8F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="9">9</div>
+                    <div class="seat A" id="9A"></div>
+                    <div class="seat B" id="9B"></div>
+                    <div class="seat C" id="9C"></div>
+                    <div class="seat D" id="9D"></div>
+                    <div class="seat E" id="9E"></div>
+                    <div class="seat F" id="9F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="10">10</div>
+                    <div class="seat A" id="10A"></div>
+                    <div class="seat B" id="10B"></div>
+                    <div class="seat C" id="10C"></div>
+                    <div class="seat D" id="10D"></div>
+                    <div class="seat E" id="10E"></div>
+                    <div class="seat F" id="10F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="11">11</div>
+                    <div class="seat A" id="11A"></div>
+                    <div class="seat B" id="11B"></div>
+                    <div class="seat C" id="11C"></div>
+                    <div class="seat D" id="11D"></div>
+                    <div class="seat E" id="11E"></div>
+                    <div class="seat F unavailable" id="11F"></div>
+                </div>
+                <div class="row extra_legroom">
+                    <div class="seatrowno seat" id="12">12</div>
+                    <div class="seat A unavailable" id="12A"></div>
+                    <div class="seat B" id="12B"></div>
+                    <div class="seat C"id="12C"></div>
+                    <div class="seat D" id="12D"></div>
+                    <div class="seat E" id="12E"></div>
+                    <div class="seat F" id="12F"></div>
+                </div>
+                <div class="row extra_legroom">
+                    <div class="seatrowno seat" id="13">13</div>
+                    <div class="seat A" id="13A"></div>
+                    <div class="seat B" id="13B"></div>
+                    <div class="seat C" id="13C"></div>
+                    <div class="seat D" id="13D"></div>
+                    <div class="seat E" id="13E"></div>
+                    <div class="seat F" id="13F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="14">14</div>
+                    <div class="seat A" id="14A"></div>
+                    <div class="seat B" id="14B"></div>
+                    <div class="seat C" id="14C"></div>
+                    <div class="seat D" id="14D"></div>
+                    <div class="seat E" id="14E"></div>
+                    <div class="seat F" id="14F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="15">15</div>
+                    <div class="seat A" id="15A"></div>
+                    <div class="seat B" id="15B"></div>
+                    <div class="seat C" id="15C"></div>
+                    <div class="seat D" id="15D"></div>
+                    <div class="seat E" id="15E"></div>
+                    <div class="seat F" id="15F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="16">16</div>
+                    <div class="seat A" id="16A"></div>
+                    <div class="seat B" id="16B"></div>
+                    <div class="seat C" id="16C"></div>
+                    <div class="seat D" id="16D"></div>
+                    <div class="seat E" id="16E"></div>
+                    <div class="seat F" id="16F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="17">17</div>
+                    <div class="seat A" id="17A"></div>
+                    <div class="seat B" id="17B"></div>
+                    <div class="seat C" id="17C"></div>
+                    <div class="seat D" id="17D"></div>
+                    <div class="seat E" id="17E"></div>
+                    <div class="seat F" id="17F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="18">18</div>
+                    <div class="seat A" id="18A"></div>
+                    <div class="seat B" id="18B"></div>
+                    <div class="seat C" id="18C"></div>
+                    <div class="seat D" id="18D"></div>
+                    <div class="seat E" id="18E"></div>
+                    <div class="seat F" id="18F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="19">19</div>
+                    <div class="seat A" id="19A"></div>
+                    <div class="seat B" id="19B"></div>
+                    <div class="seat C" id="19C"></div>
+                    <div class="seat D" id="19D"></div>
+                    <div class="seat E" id="19E"></div>
+                    <div class="seat F" id="19F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="20">20</div>
+                    <div class="seat A" id="20A"></div>
+                    <div class="seat B" id="20B"></div>
+                    <div class="seat C"id="20C"></div>
+                    <div class="seat D" id="20D"></div>
+                    <div class="seat E" id="20E"></div>
+                    <div class="seat F" id="20F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="21">21</div>
+                    <div class="seat A" id="21A"></div>
+                    <div class="seat B" id="21B"></div>
+                    <div class="seat C" id="21C"></div>
+                    <div class="seat D" id="21D"></div>
+                    <div class="seat E" id="21E"></div>
+                    <div class="seat F" id="21F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="22">22</div>
+                    <div class="seat A" id="22A"></div>
+                    <div class="seat B" id="22B"></div>
+                    <div class="seat C" id="22C"></div>
+                    <div class="seat D" id="22D"></div>
+                    <div class="seat E" id="22E"></div>
+                    <div class="seat F" id="22F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="23">23</div>
+                    <div class="seat A" id="23A"></div>
+                    <div class="seat B" id="23B"></div>
+                    <div class="seat C" id="23C"></div>
+                    <div class="seat D" id="23D"></div>
+                    <div class="seat E" id="23E"></div>
+                    <div class="seat F" id="23F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="24">24</div>
+                    <div class="seat A" id="24A"></div>
+                    <div class="seat B" id="24B"></div>
+                    <div class="seat C"id="24C"></div>
+                    <div class="seat D" id="24D"></div>
+                    <div class="seat E" id="24E"></div>
+                    <div class="seat F" id="24F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="25">25</div>
+                    <div class="seat A" id="25A"></div>
+                    <div class="seat B" id="25B"></div>
+                    <div class="seat C" id="25C"></div>
+                    <div class="seat D" id="25D"></div>
+                    <div class="seat E" id="25E"></div>
+                    <div class="seat F" id="25F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="26">26</div>
+                    <div class="seat A" id="26A"></div>
+                    <div class="seat B" id="26B"></div>
+                    <div class="seat C" id="26C"></div>
+                    <div class="seat D" id="26D"></div>
+                    <div class="seat E" id="26E"></div>
+                    <div class="seat F" id="26F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="27">27</div>
+                    <div class="seat A" id="27A"></div>
+                    <div class="seat B free" id="27B" ></div>
+                    <div class="seat C" id="27C"></div>
+                    <div class="seat D" id="27D"></div>
+                    <div class="seat E" id="27E"></div>
+                    <div class="seat F" id="27F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="28">28</div>
+                    <div class="seat A" id="28A"></div>
+                    <div class="seat B" id="28B"></div>
+                    <div class="seat C"id="28C"></div>
+                    <div class="seat D" id="28D"></div>
+                    <div class="seat E free" id="28E" ></div>
+                    <div class="seat F" id="28F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="29">29</div>
+                    <div class="seat A" id="29A"></div>
+                    <div class="seat B free" id="29B" ></div>
+                    <div class="seat C" id="29C"></div>
+                    <div class="seat D" id="29D"></div>
+                    <div class="seat E" id="29E"></div>
+                    <div class="seat F" id="29F"></div>
+                </div>
+                <div class="row">
+                    <div class="seatrowno seat" id="30">30</div>
+                    <div class="seat A" id="30A"></div>
+                    <div class="seat B free" id="30B" ></div>
+                    <div class="seat C" id="30C"></div>
+                    <div class="seat D" id="30D"></div>
+                    <div class="seat E" id="30E"></div>
+                    <div class="seat F free" id="30F"></div>
+                </div>
+             
+            </div>
+       
+        
+            <button class="submit" type="submit">Continue</button> 
+            <button class="reset" >Reset</button> 
+</div>
+<div class="summary">
+    <div class="flight_summary">
+        <span id="flight_details_heading"> Flight Details</span>
+        <div id="flight_basicinfo">
+            <p>Departing</p>
+           <div id="flight_number"> <i class="fa-solid fa-plane" style="margin-right:5px;"></i><p>6E 4957</p></div>
+        </div>
+        <div>
+            <span id="flight_journey">Bengaluru(T1)-Guwahati</span>
+            <div id="flight_info">
+                <p id="flight_date">10 Jun 2024</p>
+                <p id="flight_time"> 08:40-11:45</p>
+                <p id="flight_duration">03h 05m</p>
+                <p id="flight_stops">NonStop</p>
+            </div>
+            <hr>
+            <div id="baggage_details">
+                 <p class="checkin"> Check-in:15kg</p>
+                 <p class="hand">Hand:Upto 7kg</p>
+            </div>
+            <p style="margin:3vh 1vh; color:#e7abab; ">(Per Passenger)</p>
+        </div>
+     
+    </div>
+   
+    <div class="fare_summary">
+        <div id="fare_heading">Fare Summary</div>
+        <div id="basefare"> <p> <i class="fa-solid fa-plus" style="margin-right:5px;"></i>Base Fare:</p><p> <i class="material-icons">currency_rupee</i><cost>5834</cost></p></div>
+        <div id="additionalfare"><p> <i class="fa-solid fa-plus" style="margin-right:5px;"></i>Additional Fare:</p><p><i class="material-icons">currency_rupee</i><cost>314</cost></p></div>
+        <div id="totalfare"><p>Total Fare:</p><p><i class="material-icons">currency_rupee</i><cost>6148</cost></p></div>
+    </div>
+</div>
+</div>
+<div class="last-part">
+    <br><br>
+    <hr class="divider">
+    <div class="list">
+        <div class="listone">
+            <p>ABOUT US</p>
+            <ul>
+                <li><a href="#">About AeroNexus Airlines</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Our Crew and Staff</a></li>
+                <li><a href="#">Partner Airlines</a></li>
+            </ul>
+        </div>
+        <div class="listtwo">
+            <p>AERONEXUS EXPERIENCE</p>
+            <ul>
+                <li><a href="#">At the Airport</a></li>
+                <li><a href="#">In the Air</a></li>
+                <li><a href="#">Our Fleet</a></li>
+            </ul>
+        </div>
+        <div class="listthree">
+            <p>SUPPORT</p>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="listfour">
+            <p>INFORMATION</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Conditions of Carriage</a></li>
+                <li><a href="#">Feedback Process</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright © 2024 AeroNexus Airlines.
+            <br>
+            All rights reserved. Use of this website indicates your compliance with our Privacy Policy, Conditions of Carriage, Terms and Conditions.
+        </p>
+    </div>
+</div>
+    <script src="seat.js"></script>
+    </body>
+    </html>

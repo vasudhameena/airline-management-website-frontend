@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Record</title>
+    <link rel="stylesheet" href="passenger.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+<div class="navigation">
+    <div id="brandname">
+    <p>AeroNexus Airlines</p>
+    </div>
+    <div id="steps"> 
+    <div id="step1"><i class="material-icons">person</i><p>Passenger Details</p></div>
+    <div id="step2"><i class="material-icons">shopping_cart</i><p>Add-ons</p></div>
+    <div id="step3"><i class="material-icons">airline_seat_recline_normal</i><p> Seat</p></div>
+    <div id="step4"><i class="material-icons">credit_card</i><p>Payment</p></div>
+    </div>
+    <div id="guidelines"><a href="guide.html">Travel Guidelines</a></div>
+</div>
+<div class="advertisement">
+    <img src="sunset3.jpg">
+    <h2> AeroNexus Membership</h2>
+    <a href="membership.html">Not sure of your flight date?Or want to get discounts on seats and extra baggage.. Join SkyConnect Elite to learn more</a>
+</div>
+<div class="details">
+    <div class="Passenger_details">
+                <div class="heading">
+                    <span id="main_heading">Enter Passenger Details</span>
+                    <p id="requirement">Enter Details accordinng to Aadhar Card/Passport or any other Govt. ID</p>
+                    <hr>
+                </div>
+               
+                <form id="airnexus">
+                     <div class="passengerinput">
+                        <!-- <span class="subheading">Add Passenger 1</span>
+                        <div class="gender">
+                            <div><input type="radio" name="Gender" value="Mr." required><span>Mr.</span></div>
+                            <div><input type="radio" name="Gender" value="Ms."><span>Ms.</span></div>
+                            <div><input type="radio" name="Gender" value="Mrs."><span>Mrs.</span></div>
+                         </div>
+         
+                        <div class="input">
+                            <input type="text" placeholder="Firstname(& Middlename, if any)" id="firstname" required>
+                            <input type="text" placeholder="Last name" id="lastname" required>
+                        </div> -->
+                     </div>
+                    <div class="specialassistance">
+                       <div class="spcl">
+                        <span class="subheading">Special Assistance required</span>
+                        <i class="material-icons dropdown-icon">keyboard_arrow_down</i>
+                       </div>
+                        <ul> 
+                            <li><input type='checkbox' value="WheelChair required">WheelChair required</li>
+                            <li><input type='checkbox' value="Speech Impaired">Speech Impaired</li>
+                            <li><input type='checkbox' value="Hearing Impaired">Hearing Impared</li>
+                            <li><input type='checkbox' value="Visually Impaired">Visually Impaired</li>
+                        </ul>
+                    </div>
+                    <div class="cancellation">
+                        <div id="cancellation_heading">
+                            <span>Cancellation Refund Policy</span>
+                            <a href="#">View Policy</a>
+                        </div>
+
+                        <div id="travel_points">
+                            <i class="fa-solid fa-paper-plane" style="margin-right:7px"></i>
+                            <span>BLR-GAU</span>
+                        </div>
+                        <div class="policy">
+                            <div id="amount">
+                                <div id="penalty1"><i class="material-icons">currency_rupee</i><p>3800</p></div>
+                                <div id="penalty2"> <i class="material-icons">currency_rupee</i><p>5834</p></div>
+                                <div id="empty"></div>
+                            </div>
+                            
+                                <div id="penalty_heading"> Cancellation Penalty:</div>
+                                <div id="time_heading"> Cancellation Between(IST)</div>
+                            
+                            
+                            <div id="time">
+                                <p>Now</p>
+                                <div><p class="canceldate">22Jul</p><p id="ccltime1">12:30</p></div>
+                            <div> <p class="canceldate">22Jul</p><p id="ccltime2">14:30</p></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="contactinfo">
+                        <span id="subheading">Contact Details</span>
+                        <p>Please share passenger information for travel updates.</p>
+                        <div class="contact">
+                            <select>
+                                <option value="+91">IND(+91)</option>
+                            </select>
+                            <input type="number" placeholder="Enter Mobile Number" required>
+                            <input type="email" placeholder="Email ID" required>
+                        </div>
+                    </div>
+                    <button class="submit" type="submit">Continue</button>
+                </form>  
+    </div>
+   
+      
+   
+    <div class="summary">
+        <div class="flight_summary">
+            <span id="flight_details_heading"> Flight Details</span>
+            <div id="flight_basicinfo">
+                <p>Departing</p>
+               <div id="flight_number"> <i class="fa-solid fa-plane" style="margin-right:5px;"></i><p>6E 4957</p></div>
+            </div>
+            <div>
+                <span id="flight_journey">Bengaluru(T1)-Guwahati</span>
+                <div id="flight_info">
+                    <p id="flight_date">10 Jun 2024</p>
+                    <p id="flight_time"> 08:40-11:45</p>
+                    <p id="flight_duration">03h 05m</p>
+                    <p id="flight_stops">NonStop</p>
+                </div>
+                <hr>
+                <div id="baggage_details">
+                     <p> Check-in:15kg</p>
+                     <p>Hand:Upto 7kg</p>
+                </div>
+                <p style="margin:3vh 1vh; color:#e7abab; ">(Per Passenger)</p>
+            </div>
+         
+        </div>
+        <div class="policies">
+            <p>Not Sure of your Trip? Dont worry, we got your backs..</p>
+          
+            <div class="zerocancellation">
+                <input type="checkbox" name="policies" value="freecancellation" id="policycheckbox">
+                <h5>Zero Cancellation</h5>
+                 <div class="policycost">  <p ><i class="material-icons" class="rupee">currency_rupee</i>
+                   </p> <cost>1029</cost></div>
+                <p class="policyinfo">Get complete Refund on cancellation before 24hrs.</p>
+          
+               
+            </div>
+           
+            <div class="freedatechange">
+                <input type="checkbox"  name="policies" value="freedatechange" id="policycheckbox">
+                <h5>Free Date Change</h5>
+               <div class="policycost"> <p > <i class="material-icons" class="rupee">currency_rupee</i></p><cost>679</cost></div>
+                <p class="policyinfo">Get to change the flight date until before 2hrs.Just pay the fare difference</p>    
+            </div>
+        </div>
+        <div class="fare_summary">
+            <div id="fare_heading">Fare Summary</div>
+            <div id="basefare"> <p> <i class="fa-solid fa-plus" style="margin-right:5px;"></i>Base Fare:</p><p> <i class="material-icons">currency_rupee</i><cost>5834</cost></p></div>
+            <div id="additionalfare"><p> <i class="fa-solid fa-plus" style="margin-right:5px;"></i>Additional Fare:</p><p><i class="material-icons">currency_rupee</i><cost>314</cost></p></div>
+            <div id="totalfare"><p>Total Fare:</p><p><i class="material-icons">currency_rupee</i><cost>6148</cost></p></div>
+        </div>
+    </div>
+</div>
+
+<div class="last-part">
+    <br><br>
+    <hr class="divider">
+    <div class="list">
+        <div class="listone">
+            <p>ABOUT US</p>
+            <ul>
+                <li><a href="#">About AeroNexus Airlines</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Our Crew and Staff</a></li>
+                <li><a href="#">Partner Airlines</a></li>
+            </ul>
+        </div>
+        <div class="listtwo">
+            <p>AERONEXUS EXPERIENCE</p>
+            <ul>
+                <li><a href="#">At the Airport</a></li>
+                <li><a href="#">In the Air</a></li>
+                <li><a href="#">Our Fleet</a></li>
+            </ul>
+        </div>
+        <div class="listthree">
+            <p>SUPPORT</p>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="listfour">
+            <p>INFORMATION</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Conditions of Carriage</a></li>
+                <li><a href="#">Feedback Process</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright © 2024 AeroNexus Airlines.
+            <br>
+            All rights reserved. Use of this website indicates your compliance with our Privacy Policy, Conditions of Carriage, Terms and Conditions.
+        </p>
+    </div>
+</div>
+
+
+<script src="passenger.js"></script>
+</body>
+</html>

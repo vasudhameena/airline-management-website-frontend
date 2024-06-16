@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height: 295vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.upper-bar1 {
+    width: 100vw;
+    height: 17px;
+    overflow: hidden;
+    background-color: #7077A1;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 5px 0;
+    font-weight: 200;
+}
+
+.upper-bar2 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    /* padding: 0 10px; */
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    max-width: 100vw;
+    background-color: #161A30;
+    color: #B6BBC4;
+    /* padding: 0 20px; */
+    overflow-x: hidden;
+}
+
+.company-name{
+    margin-top: 1rem;
+    font-size: x-large;
+    color: white;
+    background-color: #161A30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: 4rem;
+}
+.destination{
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+}
+#block1{
+    width: 45vw;
+    height: 10vh;
+    background-color: #7077A1;
+    position:absolute;
+     top:50vh;
+      left:5vw;
+      z-index: 2;
+      
+      
+}
+.head1{
+    color: whitesmoke;
+    font-size: 42px;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+#block2{
+    width: 45vw;
+    height: 10vh;
+    background-color: #424769;
+    position:absolute;
+     top:53vh;
+      left:7vw;
+      z-index: 1;
+      
+}
+.paper-plane2 {
+    position: absolute;
+   top: 40vh;
+   right: 0;
+    z-index: 3;
+}
+#block3{
+    width: 100vw;
+    height: 45vh;
+    position:absolute;
+    top:0vh;
+    background-color: #E7CBCB;
+    background-image: url(longforest.jpg);
+    background-size: cover;
+    /* text-align: center; */
+}
+#heading1{
+    position: relative;
+    top: 15vh;
+    color: white;
+    font-size: 60px;
+    left: 20vw;
+}
+
+.scrollable-section {
+    margin: 20px 0; /* Space around the section */
+    background-color: rgb(228, 228, 228);
+    height: auto;
+}
+
+.scrollable-heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+    color: #161A30;
+    border-top: 1.5px dashed #161A30 ;
+}
+
+.scrollable-boxes {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px; /* Space between the boxes */
+    padding: 10px;
+    margin: 20px 0; /* Space around the container */
+    
+}
+
+.box {
+    flex: 0 0 30vh; /* Make each box 30vh x 30vh */
+    height: 30vh;
+    width: 30vh;
+    background-color: white; /* Light grey background for visibility */
+    border: 1px solid black; /* Border to distinguish boxes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2vh;
+    position: relative;
+}
+#beach-img1{
+    background-image: url(goa.avif);
+    background-size: cover;
+}
+#beach-img2{
+    background-image: url(pondicherry.avif);
+    background-size: cover;
+}
+#beach-img3{
+    background-image: url(varkala.webp);
+    background-size: cover;
+}
+#beach-img4{
+    background-image: url(gokarna.avif);
+    background-size: cover;
+}
+#beach-img5{
+    background-image: url(krabi.avif);
+    background-size: cover;
+}
+#beach-img6{
+    background-image: url(venice.avif);
+    background-size: cover;
+}
+#beach-img7{
+    background-image: url(miami.avif);
+    background-size: cover;
+}
+#beach-img8{
+    background-image: url(istanbul.webp);
+    background-size: cover;
+}
+
+.learn-more{
+    position: absolute;
+    height: 10vh;
+    width: 30vh;
+    bottom: 0;
+    background-color: white;
+    color: #161A30;
+    font-size: 22px;
+    text-align: center;
+    opacity: 0.8;
+    display: none;
+
+}
+#island-img1{
+    background-image: url(bali.avif);
+    background-size: cover;
+}
+#island-img2{
+    background-image: url(Boracay.webp);
+    background-size: cover;
+}
+#island-img3{
+    background-image: url(havelock.avif);
+    background-size: cover;
+}
+#island-img4{
+    background-image: url(Maldives.webp);
+    background-size: cover;
+}
+#island-img5{
+    background-image: url(Mauritius.webp);
+    background-size: cover;
+}
+#island-img6{
+    background-image: url(Menorca.webp);
+    background-size: cover;
+}
+#island-img7{
+    background-image: url(phuket.avif);
+    background-size: cover;
+}
+#island-img8{
+    background-image: url(Santorini.webp);
+    background-size: cover;
+}
+#historic-img1{
+    background-image: url(agra.avif);
+    background-size: cover;
+}
+#historic-img2{
+    background-image: url(jaipur.avif);
+    background-size: cover;
+}
+#historic-img3{
+    background-image: url(delhi.avif);
+    background-size: cover;
+}
+#historic-img4{
+    background-image: url(peru.jpg);
+    background-size: cover;
+}
+#historic-img5{
+    background-image: url(china.jpg);
+    background-size: cover;
+}
+#historic-img6{
+    background-image: url(egypt.jpg);
+    background-size: cover;
+}
+#historic-img7{
+    background-image: url(italy.jpg);
+    background-size: cover;
+}
+#historic-img8{
+    background-image: url(jordan.jpg);
+    background-size: cover;
+}
+#divine-img1{
+    background-image: url(rameswaram.jpg);
+    background-size: cover;
+}
+#divine-img2{
+    background-image: url(kedarnath.jpg);
+    background-size: cover;
+}
+#divine-img3{
+    background-image: url(punjab.avif);
+    background-size: cover;
+}
+#divine-img4{
+    background-image: url(varanasi.avif);
+    background-size: cover;
+}
+#divine-img5{
+    background-image: url(jerusalem.jpg);
+    background-size: cover;
+}
+#divine-img6{
+    background-image: url(mecca.jpg);
+    background-size: cover;
+}
+#divine-img7{
+    background-image: url(puri.jpg);
+    background-size: cover;
+}
+#divine-img8{
+    background-image: url(vatican2.jpg);
+    background-size: cover;
+}
+#mountains-img1{
+    background-image: url(munnar.avif);
+    background-size: cover;
+}
+#mountains-img2{
+    background-image: url(leh.avif);
+    background-size: cover;
+}
+#mountains-img3{
+    background-image: url(den2.jpg);
+    background-size: cover;
+}
+#mountains-img4{
+    background-image: url(chile.jpg);
+    background-size: cover;
+}
+#mountains-img5{
+    background-image: url(switzer.webp);
+    background-size: cover;
+}
+#mountains-img6{
+    background-image: url(argentina.jpg);
+    background-size: cover;
+}
+#mountains-img7{
+    background-image: url(kashmir2.jpg);
+    background-size: cover;
+}
+#mountains-img8{
+    background-image: url(austria.jpg);
+    background-size: cover;
+}
+.space1{
+    width: 100vw;
+    height: 2vh;
+}
+.last-part {
+    width: 100vw;
+    height: auto;
+    background-color: #161A30;
+    display:flex;
+    flex-direction: column;
+  
+}
+.divider {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+ul{
+    list-style: none;
+}
+.list p{
+    color: whitesmoke;
+}
+.list{
+    display:flex;
+    justify-content: space-between;
+   
+    padding-top:2vh;
+}
+.list li{
+    padding-top:10px;
+}
+.last-part a{
+    color:#7077A1;
+    text-decoration: none;
+    cursor:default;
+  
+}
+.copyright{
+    margin-top: 2vh;
+    color:whitesmoke;
+    background-color:#424769;
+    text-align: center;
+    height: 7vh;
+    padding-top: 1vh;
+    margin-bottom: 3vh;
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main-body">
+    <div class="upper-bar1">   
+            <span class="upper-bar2" id="upper-bar2">
+                 Welcome to AeroNexus Airlines! Every journey is more than just a destination, it's an experience. Therefore, we believe in serving one flight at a time. 
+            </span>
+    </div>
+    <div class="navbar1">
+        <div class="company-logo">
+            <!-- <img src="logo.png" alt="AeroNexus Logo" class="logo"> -->
+            <span class="company-name">AeroNexus Airlines</span>
+        </div>
+        <div class="navbar2">
+            <div class="li" id="li1">PLAN TRAVEL</div>
+            <div class="li" id="li2">WHERE WE FLY</div>
+            <div class="li" id="li3">EXPERIENCE</div>
+            <div class="li" id="li4">REWARDS</div>
+        </div>
+       
+    </div>
+
+    <div class="bg1-parent">
+    <div class="bg1">
+        <img src="worldmap4.jpg" class="bg1-img" alt="img">
+           <div class="booking1">
+            <div class="container1">
+                <div class="box" id="box1">SEARCH FLIGHTS</div>
+                <div class="box" id="box2">MANAGE BOOKING</div>
+                <div class="box" id="box3">CHECK IN</div>
+                <div class="box" id="box4">FLIGHT STATUS</div>
+            </div>
+            <br>
+            <br>
+            <form id="flightsearch">
+            <div class="search-flights">
+                <label for="from">DESTINATIONS - </label>
+                <input type="text" id="from" name="from" placeholder="FROM" required>
+                
+                <label for="to" ></label>
+                <input type="text" id="to" name="to" placeholder="TO" required>
+                <br>
+                <br>
+                <label for="date">DATE OF DEPARTURE - </label>
+                <input type="date" id="date1" name="date" required>
+                <br>
+                <br>
+                <span>SELECT CLASS - </span>
+                <select name="class" id="flying-class" required>
+                    <option value="economy">ECONOMY</option>
+                    <option value="Premium Economy">PREMIUM ECONOMY</option>
+                    <option value="Business">BUSINESS</option>
+                    <option value="first">FIRST/SUITS</option>  
+                   </select>
+                   <br>
+                   <br>
+                   <label for="passnum">NUMBER OF PASSENGERS - </label>
+                   <input type="text" id="passnum" name="number-of-passengers" placeholder="" required>
+                   <button type="submit" id="search1">SEARCH</button>
+                
+              </div>
+              </form>
+              <div class="manage-booking">
+                <input type="text" id="ref-num" name="booking-reference-number" placeholder="BOOKING REFRENCE NUMBER (PNR)">
+                <br>
+                <br>
+                <input type="text" id="last-name" name="last-name" placeholder="LAST NAME">
+                <br>
+                <br>
+                <button type="submit" id="submit1">SUBMIT</button>
+               </div>
+               <div class="check-in">
+                <input type="text" id="ref-num2" name="booking-reference-number" placeholder="SIX-CHARACTER BOOKING REFRENCE">
+                <br>
+                <br>
+                <input type="text" id="last-name2" name="last-name" placeholder="LAST NAME ">
+                <br>
+                <br>
+                <button type="submit" id="check-in-btn">CHECK-IN</button>
+               </div>
+               <div class="status">
+                <input type="flight-number" id="flight-num1" name="flight-num" placeholder="FLIGHT NUMBER ">
+                <br>
+               <br>
+               <label for="date">SELECT DATE - </label>
+               <input type="date" id="date2" name="date" >
+               <br>
+               <br>
+               <button type="submit" id="search2">SEARCH</button>
+
+               </div>
+               
+           </div>
+           <div class="log-in1">
+            <img src="https://www.singaporeair.com/assets/images/svg/profile.svg" alt="img" class="log-in-img">
+            <span class="log-in-span">Log in to your AeroNexus account to unlock personalised fare deals and more. Not a AeroNexus member? <a href="signup.html">Sign up now</a></span>
+            <button class="log-in-btn">Log in</button>
+           </div>
+
+           
+           </div>
+           <div class="plan-travel">
+              <div class="dropdown-items" id="plan-travel-list1">| POPULAR DESTINATIONS</div>
+              <div class="dropdown-items" id="plan-travel-list2">| TRAVEL GUIDE</div>
+              <div class="dropdown-items" id="plan-travel-list3">| POPULAR FLIGHTS</div>
+              <div class="dropdown-items" id="plan-travel-list4">| PARTNER AIRLINES</div>
+           </div>
+           <div class="where-we-fly">
+                <div class="dropdown-items" id="wherewefly-list1">| ROUTE MAP</div>
+                <div class="dropdown-items" id="wherewefly-list2">| POPULAR FLIGHTS</div>
+                
+           </div>
+           <div class="experience">
+             <div class="dropdown-items" id="experience-list1">| AT THE AIRPORT</div>
+             <div class="dropdown-items" id="experience-list2">| IN THE AIR</div>
+           </div>
+           <div class="rewards">
+             <div class="dropdown-items" id="rewards-list1">| AERONEXUS MEMBERSHIP</div>
+             <div class="dropdown-items" id="rewards-list2">| OFFERS & DISCOUNTS</div>
+
+           </div>
+</div>
+<div class="spacebetween1">
+
+</div>
+
+
+<div class="photosarea">
+    <div class="banner">
+        <div class="info">
+           <p id="info-para">Join Our Membership Programme</p>
+           <button id="learn-more-btn">Learn More</button>
+        </div>   
+        <img src="membership3.jpg" id="banner-img">
+        
+         
+        
+        <div class="banner-airlinr-name1">
+            <div class="values-container">
+                <div id="head2"><strong>WE BELIEVE IN</strong></div>
+                <div class="value"><strong>Customer-Centric Service</strong></div>
+                <div class="value"><strong>Safety First</strong></div>
+                <div class="value"><strong>Innovation</strong></div>
+                <div class="value"><strong>Sustainability</strong></div>
+                <div class="value"><strong>Integrity</strong></div>
+                <div class="value"><strong>Excellence</strong></div>
+                <div class="value"><strong>Diversity and Inclusion</strong></div>
+                <div class="value"><strong>Teamwork</strong></div>
+                <div class="value"><strong>Reliability</strong></div>
+                <div class="value"><strong>Community Engagement</strong></div>
+            </div>
+         <p>
+            Become a part of our exclusive Membership Programme,SkyConnect Elite and unlock a world of benefits! Enjoy priority boarding, access to luxurious airport lounges, and special discounts on flights and services. Plus, earn points with every flight you take, redeemable for exciting rewards and upgrades. Experience the best of our airline with unparalleled privileges tailored just for you.
+        </p>
+         <p>Experience luxury travel like never before with our incredible Business class discounts! Enjoy up to 70% off on premium seats that offer extra comfort, gourmet meals, and personalized service. Relax in spacious cabins, use our state-of-the-art entertainment system, and arrive at your destination feeling refreshed and rejuvenated. Book now and elevate your travel experience without breaking the bank.
+        </p>
+         <p>Discover the ultimate flying experience with our brand-new flights, designed with your comfort and convenience in mind. Featuring the latest in aviation technology, our new aircraft offer enhanced safety, more legroom, and superior in-flight entertainment options. Enjoy smoother journeys and top-notch service from our friendly crew. Fly with us and see why our new flights are the talk of the skies.
+        </p>
+         <p>Plan your perfect summer getaway with our exclusive Summer Sale! Enjoy up to 20% off on flights to the beautiful state of Kerala. Explore lush green landscapes, serene backwaters, and vibrant culture while saving big on your travel costs. Whether you're seeking adventure or relaxation, our discounted fares make it easier than ever to embark on your dream vacation. Book now and let the summer adventures begin!
+        </p>
+         <p>Unlock the full potential of your travel experience with AeroNexus Airlines by using AeroRewards! Gain access to exclusive deals, priority services, and personalized recommendations tailored to your preferences. From seamless bookings to insider tips and more, AeroRewards ensures you get the best that AeroNexus Airlines has to offer. Start using AeroRewards today and make every journey with us extraordinary.
+        </p>
+         <p>Ready to embark on your next adventure? Plan your trip with us and enjoy a hassle-free travel experience from start to finish. Our comprehensive services include flight bookings, accommodation arrangements, and tailored itineraries to suit your interests and budget. Whether you're traveling solo, with family, or on business, we make sure every detail is taken care of. Trust us to turn your travel dreams into reality.</p>
+    </div>
+        <div class="banner-airlinr-name2">
+
+        </div>
+        <div class="paper-plane1"><img id="plane-img1
+            " src="planes2-new.png" alt=""></div>
+     </div>
+    
+     <div class="spacebetween3">
+
+     </div>
+     <div class="recommended">
+        <div class="recommend-box1">
+            <div id="head1">FIND YOUR NEXT DREAM DESTINATION</div>
+        </div>
+        <div class="recommend-box2">
+           
+        </div>
+        <div class="paper-plane2"><img id="plane-img2
+            " src="paper1-long.png" alt=""></div>
+      </div>
+       <div class="spacebetween2">
+
+       </div>
+        <div class="recommendedspots">
+            <div class="one spots">
+                <h3>Seaside Serenity</h3>
+                <div class="info2">
+                    <p>Relax on sun-kissed shores with crystal-clear waters and golden sands.</p>
+                    <button class="lets-explore-btn" id="beach-btn">Let's Explore</button>
+                </div>
+             </div>
+            <div class="two spots">
+                <h3>Island Havens</h3>
+                <div class="info2">
+                    <p>Get lost in the charm of island getaways surrounded by azure waters.</p>
+                    <button class="lets-explore-btn" id="island-btn">Let's Explore</button>
+                </div>    
+            </div> 
+            <div class="three spots">
+                <h3>Historic Wonders</h3>
+                <div class="info2">
+                    <p>Marvel at the architectural masterpieces that stand the test of time.</p>
+                    <button class="lets-explore-btn" id="historic-btn">Let's Explore</button>
+                </div>
+            </div>
+            <div class="four spots">
+                <h3>Divine Destinations</h3>
+                <div class="info2">
+                    <p>Seek inner peace in the calming presence of revered spiritual destinations</p>
+                    <button class="lets-explore-btn" id="divine-btn">Let's Explore</button>
+                </div>
+            </div>
+            <div class="five spots">
+                <h3>Majestic Mountains</h3>
+                <div class="info2">
+                    <p>Venture into the wild on adventurous trails that lead to stunning heights.</p>
+                    <button class="lets-explore-btn" id="mountain-btn">Let's Explore</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="spacebetween2">
+
+        </div> -->
+        
+</div>
+<div class="last-part">
+    <br><br>
+    <hr class="divider">
+    <div class="list">
+        <div class="listone">
+            <p>ABOUT US</p>
+            <ul>
+                <li><a href="#">About AeroNexus Airlines</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Our Crew and Staff</a></li>
+                <li><a href="#">Partner Airlines</a></li>
+            </ul>
+        </div>
+        <div class="listtwo">
+            <p>AERONEXUS EXPERIENCE</p>
+            <ul>
+                <li><a href="#">At the Airport</a></li>
+                <li><a href="#">In the Air</a></li>
+                <li><a href="#">Our Fleet</a></li>
+            </ul>
+        </div>
+        <div class="listthree">
+            <p>SUPPORT</p>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="listfour">
+            <p>INFORMATION</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Conditions of Carriage</a></li>
+                <li><a href="#">Feedback Process</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright © 2024 AeroNexus Airlines.
+            <br>
+            All rights reserved. Use of this website indicates your compliance with our Privacy Policy, Conditions of Carriage, Terms and Conditions.
+        </p>
+    </div>
+</div>
+
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+

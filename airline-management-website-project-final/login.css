@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgba(112, 119, 161, 0.301);
+    color:white;
+  }
+  .navbar{
+    height:10vh;
+    background-color: #161a30;
+    display: flex;
+    align-items: center;
+    padding:3vh;
+    font-size: x-large;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-box {
+    background: #161a30;
+    width: 100%;
+    max-width: 400px;
+  
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+   
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-box label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 0 5px;
+   
+    color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .input-box input:focus + label,
+  .input-box input:valid + label {
+    top: -15px;
+    left: 5px;
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .remember-me input {
+    margin-right: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(55,55,163) ;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: rgba(151, 151, 216, 0.884);
+  }
+  
+  .register-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-link a {
+    color: rgb(55, 55, 163) ;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  

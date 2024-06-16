@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.upper-bar1 {
+    width: 100vw;
+    height: 17px;
+    overflow: hidden;
+    background-color: #7077A1;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 5px 0;
+    font-weight: 200;
+}
+
+.upper-bar2 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    /* padding: 0 10px; */
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    max-width: 100vw;
+    background-color: #161A30;
+    color: #B6BBC4;
+    /* padding: 0 20px; */
+    overflow-x: hidden;
+}
+
+.company-name{
+    margin-top: 1rem;
+    font-size: x-large;
+    color: white;
+    background-color: #161A30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: 4rem;
+}
+
+
+
+.navbar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-left: auto;
+    color: white;
+    background-color: #161A30;
+    height: 13vh;
+  }
+  
+  .li {
+    margin-top: 1rem;
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .bg1-parent{
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    height: 45vh;
+    background-color: white;
+    opacity: 1;
+    z-index: 5 ;
+  }
+   .bg1 {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    height: 45vh;
+    background-color: #7077a1;
+    opacity: 1;
+    z-index: 7 ;
+  }
+  .bg1-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+  }
+
+  .plan-travel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    z-index: 10;
+    background-color: #424769;
+    
+    color: white;
+    
+    display:flex;
+align-items: center;
+    justify-content:space-around;
+    display:none;
+    
+  }
+  
+  .where-we-fly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    z-index: 10;
+    background-color: #424769;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    display:none;
+    color: white;
+    
+  }
+  .experience{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    z-index: 10;
+    background-color: #424769;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    display:none;
+    color: white;
+  }
+  .rewards{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    z-index: 10;
+    background-color: #424769;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    display:none;
+  }
+  .dropdown-items{
+    cursor: pointer;
+  }
+  
+  .booking1 {
+    position: absolute;
+    top: 60%;
+    left: 15vw;
+    right: 15vw;
+    height: 30vh;
+    width: 70vw;
+    z-index: 9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+  }
+  .log-in1{
+    position: absolute;
+    top: 45%;
+    left: 15vw;
+    right: 15vw;
+    height: 5vh;
+    width: 70vw;
+    z-index: 9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+  }
+  .log-in-img{
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-left: 30px;
+    
+  }
+  .log-in-span{
+    padding: 5px;
+    padding-right: 30px;
+    color: #161A30;
+  }
+  .log-in-btn{
+    cursor: pointer;
+    padding: 8px 25px;
+    background-color: #161A30;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px ;
+  }
+  .container1{
+    background-color:#161A30;
+    height: 5vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.box{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.search-flights{
+    text-align: center;
+    color:#161A30 ;
+    display: none;
+    font-weight: bold;
+}
+#search1{
+    background-color: #161A30;
+    color: white;
+    /* margin: 0 5px; */
+    padding: 5px 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px ;
+   
+}
+.manage-booking{
+    text-align: center;
+    display: none;
+    
+}
+#ref-num{
+    width: 20vw;
+    height: 3vh;
+}
+#last-name{
+    width: 20vw;
+    height: 3vh;
+}
+#submit1{
+    background-color: #161A30;
+    color: white;
+    margin: 0 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px ;
+   
+}
+.check-in{
+    text-align: center;
+    display: none;
+}
+#ref-num2{
+    width: 20vw;
+    height: 3vh;
+}
+#last-name2{
+    width: 20vw;
+    height: 3vh;
+}
+#check-in-btn{
+    background-color: #161A30;
+    color: white;
+    margin: 0 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px ;
+   
+}
+.status{
+    text-align: center;
+    display: none;
+    font-weight: bold;
+}
+#flight-num1{
+    width: 20vw;
+    height: 3vh;
+}
+#date2{
+    width: 10vw;
+    height: 4vh;
+}
+#search2{
+    background-color: #161A30;
+    color: white;
+    margin: 0 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px ;
+   
+}
+.spacebetween1{
+    width: 100vw;
+    height: 30vh;
+    background-color: white;
+}
+
+.spacebetween3{
+    width: 100vw;
+    height: 15vh;
+    background-color: white;
+}
+
+.photosarea{
+    width: 100vw;
+    height: 173vh;
+    background-color: white;
+    
+}
+.banner{
+    height:70vh;
+    width:100vw;
+   
+    position:relative;
+    
+    /* margin-top:30vh; */
+
+}
+#info-para{
+    position:absolute;
+    color:white;
+top:50px;
+left:20px;
+width:40vw;
+font-size: 45px;
+animation: fadeIn 1s ease-in-out forwards;
+
+}
+#learn-more-btn{
+    color:white;
+    background-color: #161A30;
+    height:7vh;
+    width: 10vw;
+    border:none;
+    position:absolute;
+    top: 170px;
+    left:20px; 
+   
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.banner-airlinr-name1{
+    width: 21vw;
+    height: 71vh;
+    background-color: #7077A1;
+    position:absolute;
+     top:3vh;
+      left:78vw;
+      z-index: 4;
+      color: whitesmoke;
+      padding-top: 10vh;
+      padding-left: 5px;
+      padding-right: 5px;
+      
+}
+.values-container {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 20px;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+#head2{
+    margin-top: 60px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.value {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.banner-airlinr-name2{
+    width: 19vw;
+    height: 70vh;
+    background-color: #424769;
+    position:absolute;
+     top:0vh;
+      left:76vw;
+      z-index: 1;
+      
+}
+/* .paper-plane1 {
+    position: absolute;
+   
+  bottom: 60vh;
+  right: 8vw;
+    z-index: 3;
+    transform: rotate(-20deg);
+} */
+.paper-plane1 {
+    position: absolute;
+   
+  bottom: 60vh;
+  right: 4vw;
+    z-index: 6;
+    transform: rotate(-20deg);
+}
+
+#banner-img{
+    width:75vw;
+    height:70vh;
+    object-fit:fill;
+
+}
+
+
+.recommended{
+    background-color: white;
+    height:20vh;
+    color:white;
+   margin-top: 0;
+   position: relative;
+ 
+}
+.recommend-box1{
+   background-color: #7077A1;
+   color: white;
+   width: 70vw;
+   height:17vh;
+   position: absolute;
+   bottom: 8vh;
+   left: 1vw;
+   /* border-bottom: 2px solid white;
+    border-top: 2px solid white;
+      border-right: 2px solid white; */
+      z-index: 2;
+      /* border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; */
+      font-size: 50px;
+      /* text-align: center; */
+}
+#head1{
+    margin-top: 4vh;
+    margin-left: 10px;
+    font-size: 42px;
+    font-weight: bold;
+    
+}
+.recommend-box2{
+    background-color: #424769;
+    color: white;
+    width: 70vw;
+    height:18vh;
+    position: absolute;
+    bottom: 5vh;
+    left: 3vw;
+    z-index: 1;
+    
+
+    /* border-bottom: 3px solid white;
+     border-top: 3px solid white;
+       border-right: 3px solid white; */
+       /* border-top-right-radius: 10px;
+       border-bottom-right-radius: 10px; */
+ 
+ }
+ .paper-plane2 {
+    position: absolute;
+   
+   bottom: 3vh;
+   left: 43vw;
+    z-index: 3;
+}
+.recommended h1{
+   padding-left:3vw;
+   padding-top:3vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.recommended h2:hover{
+text-decoration: underline;
+
+}
+.recommended p{
+   padding-left: 3vw;
+padding-top:10px;
+color:white;
+
+}
+
+.spacebetween2{
+    
+    width: 100vw;
+    height: 6vh;
+    background-color: #E7CBCB;
+}
+.recommendedspots{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    
+    
+}
+ .spots{
+   
+    height:55vh;
+    width:20%;
+   display:flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+    filter: grayscale(100%);
+    transition: z-index 0.3s,transform 0.5s;
+    transform-origin: center center;
+}
+.info2{
+   visibility: hidden;
+    padding-left:20px;
+}
+.info2 p{
+    padding-bottom: 10px;
+    color:white;
+}
+
+.one{
+   background-image: url("beach1.jpg");
+   background-size: cover;
+}
+.two{
+    background-image: url("island2.jpg");
+    background-size: cover;
+}
+.three{
+    background-image: url("historic1.jpg");
+    background-size: cover;
+}
+.four{
+    background-image: url("divine1.jpg");
+    background-size: cover;
+}
+.five{
+    background-image: url("mountains2.jpg");
+    background-size: cover;
+}
+.recommendedspots h3{
+    display:inline;
+  margin-right:33%;
+   margin-left:20px;
+    font-size:20px;
+    color: white;
+}
+
+.spots:hover{
+    transform: scale(1.2) translateX(10px);
+    z-index:1;
+    filter:none;
+}
+
+.lets-explore-btn{
+    color:white;
+    background-color: #161A30;
+    font-size: small;
+    padding: 10px;
+    border: none;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+.div-main{
+    display: flex;
+    height: 300vh;
+}
+.lastpart{
+    height: 35vh;
+    width: 100vw;
+    background-color: #161A30;
+    
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.banner-airlinr-name1 p{
+    display:none;
+    font-size:20px;
+    width: auto;
+}
+.space1 {
+    width: 100vw;
+    height: 2vh;
+}
+.last-part {
+    width: 100vw;
+    height: auto;
+    background-color: #161A30;
+    display:flex;
+    flex-direction: column;
+  
+}
+.divider {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+ul{
+    list-style: none;
+}
+.list p{
+    color: whitesmoke;
+}
+.list{
+    display:flex;
+    justify-content: space-between;
+   
+    padding-top:2vh;
+}
+.list li{
+    padding-top:10px;
+}
+.last-part a{
+    color:#7077A1;
+    text-decoration: none;
+    cursor:default;
+  
+}
+.copyright{
+    margin-top: 2vh;
+    color:whitesmoke;
+    background-color:#424769;
+    text-align: center;
+    height: 7vh;
+    padding-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.autocomplete-suggestions {
+    border: 1px solid #ddd;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+}
+
+.autocomplete-suggestion {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.autocomplete-suggestion:hover {
+    background-color: #f0f0f0;
+}
